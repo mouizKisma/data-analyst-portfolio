@@ -11,4 +11,4 @@
 
 ## 🔗 Links  
 - [Kaggle Notebook](https://www.kaggle.com/code/mouizeddinekisma/from-zero-to-finance-analyzing-stock-risk-return)  
-- [Power BI Screenshot](projects/stock-analysis/visuals/dashboard.PNG)
+- [Power BI Screenshot](visuals/dashboard.PNG)
