@@ -1,4 +1,14 @@
-### [1. Stock Portfolio Analysis](projects/stock-analysis/README.md)  
-- **Goal**: Analyze risk vs. return for tech stocks.  
-- **Tools**: Python, Power BI, SQL.  
-- **Key Insight**: Diversification reduces volatility by 18%. 
+# Stock Portfolio Analysis  
+
+## 📊 What I Did  
+- Analyzed Apple, Tesla, and Google stocks between 2013 and 2017.  
+- Calculated Sharpe Ratios, volatility, and correlations.  
+- Built a Power BI dashboard.  
+
+## 🛠️ Tools  
+- Python  
+- Power BI  
+
+## 🔗 Links  
+- [Kaggle Notebook](https://www.kaggle.com/code/mouizeddinekisma/from-zero-to-finance-analyzing-stock-risk-return)  
+- [Power BI Screenshots](projects/stock-analysis/visuals/dashboard.png)  
