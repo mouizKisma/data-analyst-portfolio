@@ -8,4 +8,4 @@ A repository where I reference all my data analysis projects
 - **Goal**: Analyze risk vs. return for tech stocks.  
 - **Tools**: Python, Power BI, SQL.  
 - **Key Insight**: Diversification reduces volatility by 18%.  
-![Stock Dashboard](projects/stock-analysis/visuals/dashboard.png)  
+![Stock Dashboard](projects/stock-analysis/visuals/dashboard.PNG)  
