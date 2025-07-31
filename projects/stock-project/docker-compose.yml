@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "8090:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -d stockdb"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+  fetcher:
+    build: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    volumes:
+      - etl-logs:/var/log
+      - ./etl.py:/app/etl.py
+      - ./sql:/app/sql
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_PORT: ${DB_PORT}
+      DB_NAME: ${DB_NAME}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+    restart: unless-stopped
+volumes:
+  postgres_data:
+  etl-logs:

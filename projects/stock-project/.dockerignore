@@ -1,0 +1,20 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment
+venv/
+# Ignore docker-compose files
+docker-compose.yml
+docker-compose.prod.yml
+# Ignore Dockerfile
+Dockerfile
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+# Ignore logs
+logs/
+# Ignore configuration files
+*.conf
+# Ignore environment variable files
+.env
