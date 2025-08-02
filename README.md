@@ -10,7 +10,7 @@ A repository where I reference all my data analysis projects
 - **Key Insight**: Diversification reduces volatility by 18%.  
 ![Stock Dashboard](projects/stock-analysis/visuals/dashboard.PNG)  
 
-### [2. Automated Stock Data Pipeline](./)
+### [2. Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
 
 - **Goal**: Build a fully automated data pipeline that fetches, processes, stores, and visualizes stock market data.
 - **Tools**: Docker, Python, SQL (PostgreSQL), Power BI.
@@ -21,5 +21,5 @@ A repository where I reference all my data analysis projects
   - Power BI connects live to the PostgreSQL database for dashboarding.
 - **Key Insight**: This pipeline enables fast, repeatable insight generation from financial data with full transparency over each stage.
 - ![Dashboard first page/3](projects/stock-pipeline/powerbi/Stock_pipeline_page1.png) 
-- 📄 **[Dashboard PDF](projects/stock-pipeline/powerbi/stockproject2_dashboard.pdf)**
+- 📄 **[Dashboard PDF](projects/stock-pipeline/powerbi/stock_pipeline_dashboard.pdf)**
 - 🔮 **Future Work**: Expanding this pipeline with sentiment analysis from job market sources to test links between hiring trends and stock performance.
