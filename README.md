@@ -20,5 +20,5 @@ A repository where I reference all my data analysis projects
   - Modular SQL scripts build layered views (daily, weekly, annual metrics).
   - Power BI connects live to the PostgreSQL database for dashboarding.
 - **Key Insight**: This pipeline enables fast, repeatable insight generation from financial data with full transparency over each stage.
-- 📄 **[Dashboard PDF](./powerbi/dashboard.pdf)**
+- 📄 **[Dashboard PDF](projects/stock-pipeline/powerbi/stockproject2_dashboard.pdf)**
 - 🔮 **Future Work**: Expanding this pipeline with sentiment analysis from job market sources to test links between hiring trends and stock performance.
