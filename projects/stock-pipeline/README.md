@@ -1,10 +1,10 @@
-# 📈 Automated Stock Data Pipeline
+# Automated Stock Data Pipeline
 
 A full-stack data pipeline that automates the process of collecting, transforming, storing, and visualizing stock market data using Docker, Python, SQL, and Power BI.
 
 ---
 
-## 🚀 Overview
+## Overview
 
 This pipeline fetches stock data from Yahoo Finance, transforms it via a Python-based ETL process, stores it in a PostgreSQL database, and exposes analytical views for live connection to Power BI.
 
@@ -12,7 +12,7 @@ Built for modularity and experimentation, it allows analysts to plug in new metr
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 * **Docker & Docker Compose** – for isolated, reproducible environments
 * **Python (`etl.py`)** – for fetching and transforming raw stock data
@@ -22,7 +22,7 @@ Built for modularity and experimentation, it allows analysts to plug in new metr
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```
 .
@@ -52,9 +52,9 @@ Built for modularity and experimentation, it allows analysts to plug in new metr
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
-### 🔄 Data Flow
+### Data Flow
 
 1. **Yahoo Finance API**: Used to fetch historical stock data
 2. **Python ETL (`etl.py`)**: Cleans and transforms data into structured format
@@ -62,7 +62,7 @@ Built for modularity and experimentation, it allows analysts to plug in new metr
 4. **SQL Views**: Create multiple layers of analytics-ready data
 5. **Power BI**: Connects live to PostgreSQL for visualization
 
-### 🐳 Dockerized Setup
+### Dockerized Setup
 
 * `docker-compose.yml` runs:
 
@@ -71,14 +71,14 @@ Built for modularity and experimentation, it allows analysts to plug in new metr
 
 ---
 
-## 📊 Dashboard Preview
+## Dashboard Preview
 
 ![Dashboard Preview](./powerbi/dashboard-page1.png)
 📄 [Download Full Dashboard (PDF)](./powerbi/dashboard.pdf)
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 * Add a sentiment analysis module to pull in job market data from APIs, job boards, or news sources
 * Explore lagged correlations between job sentiment and sector-based stock returns
@@ -86,7 +86,7 @@ Built for modularity and experimentation, it allows analysts to plug in new metr
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone the repository
 2. Create a `.env` file (see `.env.example` if provided)
@@ -105,12 +105,13 @@ docker-compose up --build
 
 ---
 
-## 🤝 Contributions
+## Contributions
 
 Have an idea for expanding the pipeline, improving the analysis, or testing new signals? Open a pull request or drop a suggestion.
 
 ---
 
-## 📬 Contact
+## Contact
 
 For questions or feedback, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/mouizkisma)
+
