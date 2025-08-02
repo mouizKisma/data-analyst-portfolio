@@ -10,7 +10,7 @@ A repository where I reference all my data analysis projects
 - **Key Insight**: Diversification reduces volatility by 18%.  
 ![Stock Dashboard](projects/stock-analysis/visuals/dashboard.PNG)  
 
-### [2. Automated Stock Data Pipeline](./)
+### [2. Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
 
 - **Goal**: Build a fully automated data pipeline that fetches, processes, stores, and visualizes stock market data.
 - **Tools**: Docker, Python, SQL (PostgreSQL), Power BI.
