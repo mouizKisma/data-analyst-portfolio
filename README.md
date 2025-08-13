@@ -3,7 +3,7 @@ A repository where I reference all my data analysis projects
 # Mouiz kisma - Data Analyst Portfolio  
 
 ## 📌 Projects  
-### [Cyclistic Membership Conversion Report](projects/Google Data case study/README.md)  
+### [Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)  
 **Goal:** Analyze ride patterns to identify strategies for converting casual bike-share riders into annual members.  
 **Tools:** Python (Pandas), SQL, Power BI.  
 **Stack Highlights:**  
