@@ -53,7 +53,7 @@ Dataset ready for **member-vs-casual comparison** across time granularities, loc
 ---
 
 ## 5) Visuals to Include
-![Dashboard](/Final_dashboard/dashboard_screenshot.png)
+![Dashboard](./Final_dashboard/dashboard_screenshot.png)
 
 **KPI Tiles:**
 - Total rides (by member type)  
