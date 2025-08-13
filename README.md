@@ -14,8 +14,8 @@ A repository where I reference all my data analysis projects
 **Key Insight:** Casual riders often commute in the evening, presenting a prime target for a commute-focused membership offer.
 
 **Dashboard Preview:**  
-- ![Dashboard first page/3]("projects/Google Data case study/Final_dashboard/dashboard_screenshot.png") 
-- 📄 **[Dashboard PDF]("projects/Google Data case study/Final_dashboard/Cyclistic Member vs Casual Riders Dashboard.pdf")**
+- ![Dashboard first page/3](<projects/Google Data case study/Final_dashboard/dashboard_screenshot.png>)  
+- 📄 **[Dashboard PDF](<projects/Google Data case study/Final_dashboard/Cyclistic Member vs Casual Riders Dashboard.pdf>)**
 
 ### [Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
 
