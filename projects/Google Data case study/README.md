@@ -52,7 +52,7 @@ Dataset ready for **member-vs-casual comparison** across time granularities, loc
 
 ---
 
-## 5) Visuals to Include
+## 5) Supporting visualizations
 ![Dashboard](./Final_dashboard/dashboard_screenshot.png)
 
 **KPI Tiles:**
