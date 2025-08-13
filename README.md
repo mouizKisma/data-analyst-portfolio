@@ -15,7 +15,7 @@ A repository where I reference all my data analysis projects
 
 **Dashboard Preview:**  
 - ![Dashboard first page/3](<projects/Google Data case study/Final_dashboard/dashboard_screenshot.png>)  
-- 📄 **[Dashboard PDF](<projects/Google Data case study/Final_dashboard/Cyclistic Member vs Casual Riders Dashboard.pdf>)**
+- **[Dashboard PDF](<projects/Google Data case study/Final_dashboard/Cyclistic Member vs Casual Riders Dashboard.pdf>)**
 
 ### [2. Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
 
@@ -29,7 +29,7 @@ A repository where I reference all my data analysis projects
 - **Key Insight**: This pipeline enables fast, repeatable insight generation from financial data with full transparency over each stage.
 - ![Dashboard first page/3](projects/stock-pipeline/powerbi/Stock_pipeline_page2.png) 
 - ![Dashboard first page/3](projects/stock-pipeline/powerbi/Stock_pipeline_page1.png) 
-- 📄 **[Dashboard PDF](projects/stock-pipeline/powerbi/stock_pipeline_dashboard.pdf)**
+- **[Dashboard PDF](projects/stock-pipeline/powerbi/stock_pipeline_dashboard.pdf)**
 - 🔮 **Future Work**: Expanding this pipeline with sentiment analysis from job market sources to test links between hiring trends and stock performance.
 
 ### [3. Stock Portfolio Analysis](projects/stock-analysis/README.md)  
