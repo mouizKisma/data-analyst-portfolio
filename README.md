@@ -2,7 +2,10 @@
 A repository where I reference all my data analysis projects
 # Mouiz kisma - Data Analyst Portfolio  
 
-## 📌 Projects  
+## 📌 Projects
+[1. Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)
+[2. Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
+[3. Stock Portfolio Analysis](projects/stock-analysis/README.md) 
 ### [1. Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)  
 **Goal:** Analyze ride patterns to identify strategies for converting casual bike-share riders into annual members.  
 **Tools:** Python (Pandas), SQL, Power BI.  
@@ -30,7 +33,7 @@ A repository where I reference all my data analysis projects
 - ![Dashboard first page/3](projects/stock-pipeline/powerbi/Stock_pipeline_page2.png) 
 - ![Dashboard first page/3](projects/stock-pipeline/powerbi/Stock_pipeline_page1.png) 
 - **[Dashboard PDF](projects/stock-pipeline/powerbi/stock_pipeline_dashboard.pdf)**
-- 🔮 **Future Work**: Expanding this pipeline with sentiment analysis from job market sources to test links between hiring trends and stock performance.
+- **Future Work**: Expanding this pipeline with sentiment analysis from job market sources to test links between hiring trends and stock performance.
 
 ### [3. Stock Portfolio Analysis](projects/stock-analysis/README.md)  
 - **Goal**: Analyze risk vs. return for tech stocks.  
