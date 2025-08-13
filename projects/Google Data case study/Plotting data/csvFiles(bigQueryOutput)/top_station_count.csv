@@ -1,0 +1,13 @@
+station_type,member_type,start_station_name,ride_count,rnk
+END,casual,Streeter Dr & Grand Ave,40159,1
+END,casual,DuSable Lake Shore Dr & Monroe St,20942,2
+END,casual,DuSable Lake Shore Dr & North Blvd,20891,3
+END,member,Kingsbury St & Kinzie St,27765,1
+END,member,Clinton St & Washington Blvd,22815,2
+END,member,Clinton St & Madison St,21744,3
+Start,casual,Streeter Dr & Grand Ave,36454,1
+Start,casual,DuSable Lake Shore Dr & Monroe St,22910,2
+Start,casual,Michigan Ave & Oak St,16959,3
+Start,member,Kingsbury St & Kinzie St,27449,1
+Start,member,Clinton St & Washington Blvd,22691,2
+Start,member,Clinton St & Madison St,20748,3
