@@ -3,7 +3,7 @@ A repository where I reference all my data analysis projects
 # Mouiz kisma - Data Analyst Portfolio  
 
 ## 📌 Projects  
-### [Cyclistic Membership Conversion Report](projects/Google Data case study/Final_dashboard/dashboard_screenshot.png)  
+### [Cyclistic Membership Conversion Report](projects/Google Data case study/README.md)  
 **Goal:** Analyze ride patterns to identify strategies for converting casual bike-share riders into annual members.  
 **Tools:** Python (Pandas), SQL, Power BI.  
 **Stack Highlights:**  
@@ -14,7 +14,7 @@ A repository where I reference all my data analysis projects
 **Key Insight:** Casual riders often commute in the evening, presenting a prime target for a commute-focused membership offer.
 
 **Dashboard Preview:**  
-![Cyclistic Dashboard](path/to/your-dashboard.png)
+![Cyclistic Dashboard](projects/Google Data case study/Final_dashboard/dashboard_screenshot.png)
 
 ### [Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
 
