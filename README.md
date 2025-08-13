@@ -3,7 +3,7 @@ A repository where I reference all my data analysis projects
 # Mouiz kisma - Data Analyst Portfolio  
 
 ## 📌 Projects  
-### [Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)  
+### [1. Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)  
 **Goal:** Analyze ride patterns to identify strategies for converting casual bike-share riders into annual members.  
 **Tools:** Python (Pandas), SQL, Power BI.  
 **Stack Highlights:**  
@@ -17,7 +17,7 @@ A repository where I reference all my data analysis projects
 - ![Dashboard first page/3](<projects/Google Data case study/Final_dashboard/dashboard_screenshot.png>)  
 - 📄 **[Dashboard PDF](<projects/Google Data case study/Final_dashboard/Cyclistic Member vs Casual Riders Dashboard.pdf>)**
 
-### [Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
+### [2. Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
 
 - **Goal**: Build a fully automated data pipeline that fetches, processes, stores, and visualizes stock market data.
 - **Tools**: Docker, Python, SQL (PostgreSQL), Power BI.
@@ -31,7 +31,7 @@ A repository where I reference all my data analysis projects
 - 📄 **[Dashboard PDF](projects/stock-pipeline/powerbi/stock_pipeline_dashboard.pdf)**
 - 🔮 **Future Work**: Expanding this pipeline with sentiment analysis from job market sources to test links between hiring trends and stock performance.
 
-### [Stock Portfolio Analysis](projects/stock-analysis/README.md)  
+### [3. Stock Portfolio Analysis](projects/stock-analysis/README.md)  
 - **Goal**: Analyze risk vs. return for tech stocks.  
 - **Tools**: Python, Power BI, SQL.  
 - **Key Insight**: Diversification reduces volatility by 18%.  
