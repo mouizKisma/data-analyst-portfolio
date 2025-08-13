@@ -3,14 +3,20 @@ A repository where I reference all my data analysis projects
 # Mouiz kisma - Data Analyst Portfolio  
 
 ## 📌 Projects  
+### [Cyclistic Membership Conversion Report](projects/Google Data case study/Final_dashboard/dashboard_screenshot.png)  
+**Goal:** Analyze ride patterns to identify strategies for converting casual bike-share riders into annual members.  
+**Tools:** Python (Pandas), SQL, Power BI.  
+**Stack Highlights:**  
+- Cleaned and transformed 12 months of ride data (~5M rows) with calculated fields for ride duration, day of week, and hour of day.  
+- Compared member vs. casual usage patterns by time, location, and seasonality.  
+- Designed KPI tiles and visualizations (hourly, monthly, and membership mix) in Power BI.  
 
-### [1. Stock Portfolio Analysis](projects/stock-analysis/README.md)  
-- **Goal**: Analyze risk vs. return for tech stocks.  
-- **Tools**: Python, Power BI, SQL.  
-- **Key Insight**: Diversification reduces volatility by 18%.  
-![Stock Dashboard](projects/stock-analysis/visuals/dashboard.PNG)  
+**Key Insight:** Casual riders often commute in the evening, presenting a prime target for a commute-focused membership offer.
 
-### [2. Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
+**Dashboard Preview:**  
+![Cyclistic Dashboard](path/to/your-dashboard.png)
+
+### [Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
 
 - **Goal**: Build a fully automated data pipeline that fetches, processes, stores, and visualizes stock market data.
 - **Tools**: Docker, Python, SQL (PostgreSQL), Power BI.
@@ -23,3 +29,11 @@ A repository where I reference all my data analysis projects
 - ![Dashboard first page/3](projects/stock-pipeline/powerbi/Stock_pipeline_page1.png) 
 - 📄 **[Dashboard PDF](projects/stock-pipeline/powerbi/stock_pipeline_dashboard.pdf)**
 - 🔮 **Future Work**: Expanding this pipeline with sentiment analysis from job market sources to test links between hiring trends and stock performance.
+
+### [Stock Portfolio Analysis](projects/stock-analysis/README.md)  
+- **Goal**: Analyze risk vs. return for tech stocks.  
+- **Tools**: Python, Power BI, SQL.  
+- **Key Insight**: Diversification reduces volatility by 18%.  
+![Stock Dashboard](projects/stock-analysis/visuals/dashboard.PNG)  
+
+
