@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Performance Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .kpi-container {
+            display: grid;
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .kpi-main {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .kpi-secondary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .kpi-tile {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.06);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kpi-tile:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 12px rgba(0,0,0,0.1), 0 2px 4px rgba(0,0,0,0.06);
+        }
+
+        .kpi-tile.highlight {
+            background: linear-gradient(135deg, #fff3cd 0%, #ffe8a1 100%);
+            border: 2px solid #ffc107;
+            min-width: 300px;
+        }
+
+        .kpi-tile.highlight::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,193,7,0.1) 0%, transparent 70%);
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.1); opacity: 0.3; }
+        }
+
+        .kpi-label {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
+        .kpi-tile.highlight .kpi-label {
+            color: #856404;
+        }
+
+        .kpi-value {
+            font-size: 48px;
+            font-weight: 700;
+            color: #2c3e50;
+            line-height: 1;
+        }
+
+        .kpi-tile.highlight .kpi-value {
+            color: #856404;
+            font-size: 56px;
+        }
+
+        .confusion-section {
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.07), 0 1px 3px rgba(0,0,0,0.06);
+        }
+
+        .confusion-title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .confusion-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .confusion-matrix {
+            display: grid;
+            grid-template-columns: 40px repeat(2, 150px);
+            grid-template-rows: 40px repeat(2, 100px);
+            gap: 3px;
+            font-size: 14px;
+        }
+
+        .matrix-cell {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            border-radius: 8px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .matrix-header {
+            background: transparent;
+            color: #495057;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .matrix-label {
+            background: #f8f9fa;
+            color: #495057;
+            font-size: 13px;
+            padding: 8px;
+        }
+
+        .matrix-value {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+            cursor: pointer;
+        }
+
+        .matrix-value:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        .matrix-value::after {
+            content: attr(data-label);
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 11px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+
+        .axis-label {
+            position: absolute;
+            font-size: 12px;
+            font-weight: 600;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .y-axis-label {
+            left: -80px;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+        }
+
+        .x-axis-label {
+            bottom: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .legend {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+            color: #495057;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 1px solid rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Model Performance – Bearing Fault Classification</h1>
+        
+        <div class="kpi-container">
+            <div class="kpi-main">
+                <div class="kpi-tile highlight">
+                    <div class="kpi-label">Accuracy</div>
+                    <div class="kpi-value">44.2%</div>
+                </div>
+            </div>
+            
+            <div class="kpi-secondary">
+                <div class="kpi-tile">
+                    <div class="kpi-label">Precision</div>
+                    <div class="kpi-value">91.5%</div>
+                </div>
+                <div class="kpi-tile">
+                    <div class="kpi-label">Recall</div>
+                    <div class="kpi-value">44.2%</div>
+                </div>
+                <div class="kpi-tile">
+                    <div class="kpi-label">F1-Score</div>
+                    <div class="kpi-value">52.2%</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="confusion-section">
+            <h2 class="confusion-title">Confusion Matrix</h2>
+            <div class="confusion-container">
+                <div class="axis-label y-axis-label">Actual</div>
+                <div class="axis-label x-axis-label">Predicted</div>
+                
+                <div class="confusion-matrix">
+                    <!-- Header row -->
+                    <div class="matrix-cell"></div>
+                    <div class="matrix-cell matrix-header">Healthy (0)</div>
+                    <div class="matrix-cell matrix-header">Degraded (1)</div>
+                    
+                    <!-- First data row -->
+                    <div class="matrix-cell matrix-label">Healthy (0)</div>
+                    <div class="matrix-cell matrix-value" id="tn" data-label="TN">230</div>
+                    <div class="matrix-cell matrix-value" id="fp" data-label="FP">0</div>
+                    
+                    <!-- Second data row -->
+                    <div class="matrix-cell matrix-label">Degraded (1)</div>
+                    <div class="matrix-cell matrix-value" id="fn" data-label="FN">1283</div>
+                    <div class="matrix-cell matrix-value" id="tp" data-label="TP">787</div>
+                </div>
+            </div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #2ecc71;"></div>
+                    <span>True Positives (TP)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #3498db;"></div>
+                    <span>True Negatives (TN)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #e74c3c;"></div>
+                    <span>False Negatives (FN)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color" style="background: #f39c12;"></div>
+                    <span>False Positives (FP)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Load model results
+        async function loadModelResults() {
+            try {
+                const fileContent = await window.fs.readFile('model_results.json', { encoding: 'utf8' });
+                const data = JSON.parse(fileContent);
+                
+                // Update KPI values
+                document.querySelector('.kpi-tile.highlight .kpi-value').textContent = 
+                    (data.accuracy * 100).toFixed(1) + '%';
+                document.querySelectorAll('.kpi-secondary .kpi-tile')[0].querySelector('.kpi-value').textContent = 
+                    (data.precision * 100).toFixed(1) + '%';
+                document.querySelectorAll('.kpi-secondary .kpi-tile')[1].querySelector('.kpi-value').textContent = 
+                    (data.recall * 100).toFixed(1) + '%';
+                document.querySelectorAll('.kpi-secondary .kpi-tile')[2].querySelector('.kpi-value').textContent = 
+                    (data.f1_score * 100).toFixed(1) + '%';
+                
+                // Update confusion matrix values
+                const [[tn, fp], [fn, tp]] = data.confusion_matrix;
+                document.getElementById('tn').textContent = tn;
+                document.getElementById('fp').textContent = fp;
+                document.getElementById('fn').textContent = fn;
+                document.getElementById('tp').textContent = tp;
+                
+                // Apply colors to confusion matrix cells
+                applyHeatmapColors();
+            } catch (error) {
+                console.log('Using default values from HTML');
+                applyHeatmapColors();
+            }
+        }
+        
+        function applyHeatmapColors() {
+            const tn = parseInt(document.getElementById('tn').textContent);
+            const fp = parseInt(document.getElementById('fp').textContent);
+            const fn = parseInt(document.getElementById('fn').textContent);
+            const tp = parseInt(document.getElementById('tp').textContent);
+            
+            // Color scheme for confusion matrix
+            document.getElementById('tn').style.background = '#3498db'; // Blue for TN
+            document.getElementById('tp').style.background = '#2ecc71'; // Green for TP
+            document.getElementById('fn').style.background = '#e74c3c'; // Red for FN
+            document.getElementById('fp').style.background = fp > 0 ? '#f39c12' : '#95a5a6'; // Orange for FP, gray if 0
+            
+            // Adjust opacity based on values
+            const maxVal = Math.max(tn, fp, fn, tp);
+            document.getElementById('tn').style.opacity = 0.5 + (tn / maxVal) * 0.5;
+            document.getElementById('tp').style.opacity = 0.5 + (tp / maxVal) * 0.5;
+            document.getElementById('fn').style.opacity = 0.5 + (fn / maxVal) * 0.5;
+            document.getElementById('fp').style.opacity = fp > 0 ? 0.5 + (fp / maxVal) * 0.5 : 0.3;
+        }
+        
+        // Load data when page loads
+        loadModelResults();
+        
+        // Add tooltips on hover
+        document.querySelectorAll('.matrix-value').forEach(cell => {
+            cell.addEventListener('mouseenter', function() {
+                const label = this.getAttribute('data-label');
+                const value = this.textContent;
+                this.title = `${label}: ${value}`;
+            });
+        });
+    </script>
+</body>
+</html>

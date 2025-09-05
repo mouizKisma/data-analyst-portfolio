@@ -1,0 +1,25 @@
+.
+├── Dockerfile
+├── docker-compose.prod.yml
+├── docker-compose.yml
+├── etl.py
+├── folder_structure.txt
+├── full_structure.txt
+├── powerbi
+├── requirements.txt
+├── scripts
+│   ├── entrypoint.sh
+│   ├── healthcheck.sh
+│   └── scheduler.sh
+└── sql
+    ├── 1_base_view.sql
+    ├── 2_daily_metrics_view.sql
+    ├── 3_weekly_metrics_view.sql
+    ├── 4_annual_metrics_view.sql
+    ├── 5_reporting_view.sql
+    ├── 6_reporting_weekly_view.sql
+    ├── create_table.sql
+    ├── create_temp_table.sql
+    └── upsert_stock_data.sql
+
+4 directories, 19 files
