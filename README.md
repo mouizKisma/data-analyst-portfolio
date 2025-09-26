@@ -9,7 +9,7 @@ A repository where I reference all my data analysis projects
 [3. Automated Stock Data Pipeline](projects/stock-pipeline/README.md)\
 [4. Stock Portfolio Analysis](projects/stock-analysis/README.md) 
 ##
-### [1. IMS Bearing Failure Prediction Analysis using feature engineering](projects/predictive-maintenance/README.md)
+### [1. IMS Bearing Failure Prediction Analysis using feature engineering](<projects/Predictive project/README.md>)
 **Goal:** Develop failure prediction models for industrial bearings using sensor data analysis to reduce unplanned downtime.  
 **Tools:** Python (Pandas, Scikit-learn, XGBoost), Kaggle Notebooks.  
 **Stack Highlights:**  
