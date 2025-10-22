@@ -1,6 +1,6 @@
 # Predictive Maintenance for Industrial Equipment using 1D CNN
 **Identifying Cross-Domain Challenges in Bearing Fault Detection**
-- ![Dashboard first page/3](<projects/Predictive project/output>)
+- ![Dashboard first page/3](<Output and results/bearing_failure_dashboard.png>)
 
 ## Kaggle Notebooks
 
