@@ -3,13 +3,24 @@ A repository where I reference all my data analysis projects
 # Mouiz kisma - Data Analyst Portfolio  
 
 ## 📌 Projects
-
-[1. IMS Bearing Failure Prediction Analysis using feature engineering](<projects/Predictive project/README.md>)\
-[2. Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)\
-[3. Automated Stock Data Pipeline](projects/stock-pipeline/README.md)\
-[4. Stock Portfolio Analysis](projects/stock-analysis/README.md) 
+[IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using deep learning 1D CNN/README.md>)\
+[IMS Bearing Failure Prediction Analysis using feature engineering](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using feature engineering/README.md>)\
+[Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)\
+[Automated Stock Data Pipeline](projects/stock-pipeline/README.md)\
+[Stock Portfolio Analysis](projects/stock-analysis/README.md) 
 ##
-### [1. IMS Bearing Failure Prediction Analysis using feature engineering](<projects/Predictive project/README.md>)
+## [IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using deep learning 1D CNN>)\
+**Exploring Cross-Domain Challenges in Bearing Fault Detection with Deep Learning**
+
+A real-world case study demonstrating why ML models that excel in the lab often fail in production. Built a 1D CNN achieving 99% accuracy on training data, which completely failed on different equipment—highlighting the critical importance of domain adaptation in industrial AI.
+
+**Key Challenge**: Models trained on one dataset (IMS) couldn't generalize to another (CWRU), achieving 0% recall on healthy bearings despite 89% overall accuracy.
+
+**Technologies**: Python • TensorFlow/Keras • 1D CNN • Time-Series Analysis
+- ![Dashboard first page/3](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using deep learning 1D CNN/Output and results/bearing_failure_dashboard.png)
+
+---
+### [IMS Bearing Failure Prediction Analysis using feature engineering](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using feature engineering>)
 **Goal:** Develop failure prediction models for industrial bearings using sensor data analysis to reduce unplanned downtime.  
 **Tools:** Python (Pandas, Scikit-learn, XGBoost), Kaggle Notebooks.  
 **Stack Highlights:**  
@@ -22,7 +33,7 @@ A repository where I reference all my data analysis projects
 
 - ![Dashboard first page/3](<projects/Predictive project/output/Model Performance Dashboard.png>)
 - 
-### [2. Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)  
+### [Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)  
 **Goal:** Analyze ride patterns to identify strategies for converting casual bike-share riders into annual members.  
 **Tools:** Python (Pandas), SQL, Power BI.  
 **Stack Highlights:**  
@@ -36,7 +47,7 @@ A repository where I reference all my data analysis projects
 - ![Dashboard first page/3](<projects/Google Data case study/Final_dashboard/dashboard_screenshot.png>)  
 - **[Dashboard PDF](<projects/Google Data case study/Final_dashboard/Cyclistic Member vs Casual Riders Dashboard.pdf>)**
 
-### [3. Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
+### [Automated Stock Data Pipeline](projects/stock-pipeline/README.md)
 
 - **Goal**: Build a fully automated data pipeline that fetches, processes, stores, and visualizes stock market data.
 - **Tools**: Docker, Python, SQL (PostgreSQL), Power BI.
@@ -52,7 +63,7 @@ A repository where I reference all my data analysis projects
 - **[Dashboard PDF](projects/stock-pipeline/powerbi/stock_pipeline_dashboard.pdf)**
 - **Future Work**: Expanding this pipeline with sentiment analysis from job market sources to test links between hiring trends and stock performance.
 
-### [4. Stock Portfolio Analysis](projects/stock-analysis/README.md)  
+### [Stock Portfolio Analysis](projects/stock-analysis/README.md)  
 - **Goal**: Analyze risk vs. return for tech stocks.  
 - **Tools**: Python, Power BI, SQL.  
 - **Key Insight**: Diversification reduces volatility by 18%.  
