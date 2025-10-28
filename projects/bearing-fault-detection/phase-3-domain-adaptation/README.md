@@ -7,7 +7,7 @@ Phase 2 demonstrated complete cross-domain failure (0% recall on healthy bearing
 
 ## Kaggle Notebooks
 
-- [Notebook 1: Data preparation](https://www.kaggle.com/code/mouizeddinekisma/1d-cnn-domain-adaptation)
+- [Notebook: 1d-cnn-domain-adaptation](https://www.kaggle.com/code/mouizeddinekisma/1d-cnn-domain-adaptation)
 
 **Confusion Matrix:**
 
