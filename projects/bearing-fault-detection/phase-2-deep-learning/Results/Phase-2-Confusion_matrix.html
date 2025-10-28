@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confusion Matrix</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #ffffffd9;
+            color: #000000;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+
+        .card h2 {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            color: #000000;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .confusion-matrix {
+            display: grid;
+            grid-template-columns: 80px 1fr 1fr;
+            gap: 2px;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        .cm-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .cm-cell {
+            aspect-ratio: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: transform 0.2s;
+            color: #fff;
+        }
+
+        .cm-cell:hover {
+            transform: scale(1.05);
+        }
+
+        .cm-zero {
+            background: linear-gradient(135deg, #c62828 0%, #d32f2f 100%);
+            box-shadow: 0 4px 16px rgba(198, 40, 40, 0.6);
+        }
+
+        .cm-low {
+            background: linear-gradient(135deg, #f57c00 0%, #ff9800 100%);
+        }
+
+        .cm-high {
+            background: linear-gradient(135deg, #388e3c 0%, #4caf50 100%);
+        }
+
+        p.note {
+            margin-top: 20px;
+            color: #ef5350;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Confusion Matrix</h2>
+        <div class="confusion-matrix">
+            <div></div>
+            <div class="cm-label">Pred: 0</div>
+            <div class="cm-label">Pred: 1</div>
+            
+            <div class="cm-label">True: 0</div>
+            <div class="cm-cell cm-zero">0</div>
+            <div class="cm-cell cm-zero">236</div>
+            
+            <div class="cm-label">True: 1</div>
+            <div class="cm-cell cm-low">20</div>
+            <div class="cm-cell cm-high">2113</div>
+        </div>
+        <p class="note">⚠️ ALL 236 Healthy Samples Misclassified</p>
+    </div>
+</body>
+</html>
