@@ -11,7 +11,7 @@ Phase 2 demonstrated complete cross-domain failure (0% recall on healthy bearing
 
 **Confusion Matrix:**
 
-- ![Dashboard first page](<projects/bearing-fault-detection/phase-3-domain-adaptation/results/Phase-3-Confusion_matrix.png>)
+- ![Dashboard first page](<results/Phase-3-Confusion_matrix.png>)
 
 **Strategy:**
 - Split CWRU dataset: 20% for adaptation (473 samples), 80% for testing (1,896 samples)
