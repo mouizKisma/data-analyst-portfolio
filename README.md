@@ -8,7 +8,7 @@ A repository where I reference all my data analysis projects
 [Cyclistic Membership Conversion Report dashboard](<projects/Google Data case study/README.md>)\
 [Automated Docker/PowerBI Stock Data Pipeline](projects/stock-pipeline/README.md)\
 ##
-## [IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using deep learning 1D CNN>)\
+## [IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using deep learning 1D CNN>)
 **Exploring Cross-Domain Challenges in Bearing Fault Detection with Deep Learning**
 
 A real-world case study demonstrating why ML models that excel in the lab often fail in production. Built a 1D CNN achieving 99% accuracy on training data, which completely failed on different equipment—highlighting the critical importance of domain adaptation in industrial AI.
