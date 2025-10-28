@@ -16,7 +16,7 @@ A real-world case study demonstrating why ML models that excel in the lab often 
 **Key Challenge**: Models trained on one dataset (IMS) couldn't generalize to another (CWRU), achieving 0% recall on healthy bearings despite 89% overall accuracy.
 
 **Technologies**: Python • TensorFlow/Keras • 1D CNN • Time-Series Analysis
-- ![Dashboard first page/3](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using deep learning 1D CNN/Output and results/bearing_failure_dashboard.png>)
+- ![Dashboard first page/3](<projects/bearing-fault-detection/phase-2-deep-learning/Results/Phase-2-Confusion_matrix.png>)
 
 ---
 ### [IMS Bearing Failure Prediction Analysis using feature engineering](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using feature engineering>)
@@ -30,7 +30,7 @@ A real-world case study demonstrating why ML models that excel in the lab often 
 - Achieved 44.2% accuracy and 91.5% precision when testing on external CWRU bearing dataset.  
 **Key Insight:** Cross-dataset validation revealed significant generalization challenges, with high precision but limited recall when applying IMS-trained model to CWRU data.
 
-- ![Dashboard first page/3](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using feature engineering/output/Model Performance Dashboard.png>)
+- ![Dashboard first page/3](<projects/bearing-fault-detection/phase-1-feature-engineering/Results/Model Performance Dashboard.png>)
 - 
 ### [Cyclistic Membership Conversion Report](<projects/Google Data case study/README.md>)  
 **Goal:** Analyze ride patterns to identify strategies for converting casual bike-share riders into annual members.  
