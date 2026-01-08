@@ -4,9 +4,10 @@ A repository where I reference all my data analysis projects
 
 ## 📌 Projects
 [IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/bearing-fault-detection/phase-2-deep-learning>)\
-[IMS Bearing Failure Prediction Analysis using feature engineering/XGB](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using feature engineering/README.md>)\
+[IMS Bearing Failure Prediction Analysis using feature engineering/XGB](<projects/bearing-fault-detection/phase-1-feature-engineering>)\
+[IMS Bearing Failure Prediction Analysis Domain adaptation](<projects/bearing-fault-detection/phase-3-domain-adaptation>)\
 [Cyclistic Membership Conversion Report dashboard](<projects/Google Data case study/README.md>)\
-[Automated Docker/PowerBI Stock Data Pipeline](projects/stock-pipeline/README.md)\
+[Automated Docker/PowerBI Stock Data Pipeline](projects/stock-pipeline/README.md)
 ##
 ## [IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using deep learning 1D CNN>)
 **Exploring Cross-Domain Challenges in Bearing Fault Detection with Deep Learning**
