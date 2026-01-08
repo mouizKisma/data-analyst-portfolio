@@ -3,7 +3,7 @@ A repository where I reference all my data analysis projects
 # Mouiz kisma - Data Analyst Portfolio  
 
 ## 📌 Projects
-[IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using deep learning 1D CNN/README.md>)\
+[IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/bearing-fault-detection/phase-2-deep-learning>)\
 [IMS Bearing Failure Prediction Analysis using feature engineering/XGB](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using feature engineering/README.md>)\
 [Cyclistic Membership Conversion Report dashboard](<projects/Google Data case study/README.md>)\
 [Automated Docker/PowerBI Stock Data Pipeline](projects/stock-pipeline/README.md)\
