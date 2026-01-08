@@ -3,6 +3,7 @@ A repository where I reference all my data analysis projects
 # Mouiz kisma - Data Analyst Portfolio  
 
 ## 📌 Projects
+[Projects](<projects>)\
 [IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/bearing-fault-detection/phase-2-deep-learning>)\
 [IMS Bearing Failure Prediction Analysis using feature engineering/XGB](<projects/bearing-fault-detection/phase-1-feature-engineering>)\
 [IMS Bearing Failure Prediction Analysis Domain adaptation](<projects/bearing-fault-detection/phase-3-domain-adaptation>)\
