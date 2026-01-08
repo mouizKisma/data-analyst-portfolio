@@ -9,7 +9,7 @@ A repository where I reference all my data analysis projects
 [Cyclistic Membership Conversion Report dashboard](<projects/Google Data case study/README.md>)\
 [Automated Docker/PowerBI Stock Data Pipeline](projects/stock-pipeline/README.md)
 ##
-## [IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using deep learning 1D CNN>)
+## [IMS Bearing Failure Prediction Analysis using deep learning 1D CNN](<projects/bearing-fault-detection/phase-2-deep-learning>)
 **Exploring Cross-Domain Challenges in Bearing Fault Detection with Deep Learning**
 
 A real-world case study demonstrating why ML models that excel in the lab often fail in production. Built a 1D CNN achieving 99% accuracy on training data, which completely failed on different equipment—highlighting the critical importance of domain adaptation in industrial AI.
@@ -20,7 +20,7 @@ A real-world case study demonstrating why ML models that excel in the lab often 
 - ![Dashboard first page/3](<projects/bearing-fault-detection/phase-2-deep-learning/Results/Phase-2-Confusion_matrix.png>)
 
 ---
-### [IMS Bearing Failure Prediction Analysis using feature engineering](<projects/Predictive project/IMS Bearing Failure Prediction Analysis using feature engineering>)
+### [IMS Bearing Failure Prediction Analysis using feature engineering](<projects/bearing-fault-detection/phase-1-feature-engineering>)
 **Goal:** Develop failure prediction models for industrial bearings using sensor data analysis to reduce unplanned downtime.  
 **Tools:** Python (Pandas, Scikit-learn, XGBoost), Kaggle Notebooks.  
 **Stack Highlights:**  
