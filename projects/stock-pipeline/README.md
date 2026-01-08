@@ -73,6 +73,7 @@ Built for modularity and experimentation, it allows analysts to plug in new metr
 
 ## Dashboard Preview
 
+![Dashboard Preview](powerbi/svgviewer-png-output.png)
 ![Dashboard Preview](powerbi/Stock_pipeline_page1.png)
 ![Dashboard Preview](powerbi/Stock_pipeline_page2.png)
 ![Dashboard Preview](powerbi/Stock_pipeline_page3.png)
@@ -116,6 +117,7 @@ Have an idea for expanding the pipeline, improving the analysis, or testing new 
 ## Contact
 
 For questions or feedback, feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/mouizkisma)
+
 
 
 
